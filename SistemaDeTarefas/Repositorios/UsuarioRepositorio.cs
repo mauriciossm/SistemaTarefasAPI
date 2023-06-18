@@ -39,7 +39,7 @@ namespace SistemaDeTarefas.Repositorios
             
             if (usuarioPorId == null)
             {
-                throw new Exception($"Usuario para o ID: {id} Não foi encontrado.");
+                throw new Exception($"Usuário para o ID: {id} Não foi encontrado.");
             }
 
             usuarioPorId.Nome = usuario.Nome;
@@ -57,7 +57,7 @@ namespace SistemaDeTarefas.Repositorios
 
             if (usuarioPorId == null)
             {
-                throw new Exception($"Usuario para o ID: {id} Não foi encontrado.");
+                throw new Exception($"Usuário para o ID: {id} Não foi encontrado.");
             }
 
             _dbContext.Usuarios.Remove(usuarioPorId);

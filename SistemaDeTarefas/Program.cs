@@ -17,6 +17,8 @@ namespace SistemaDeTarefas
                 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DataBase")));
 
             builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+            builder.Services.AddScoped<ITarefaRepositorio, TarefaRepositorio>();
+
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
